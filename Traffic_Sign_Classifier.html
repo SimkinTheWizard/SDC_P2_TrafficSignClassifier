@@ -18308,6 +18308,18 @@ TSJ+ZLomAN6ERlHc7Wi80Hx52jX7GwBPAvgxgO65nEe/8BMiUfQLPyESRcEvRKIo+IVIFAW/EImi
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>The test images are plotted above. The test set includes one circular, one rotated square, and three rectangular signs.</p>
+<p>The rotated square is the easiest to classify because both the shape and the color of the sign significantly distinguishes it from the other signs.</p>
+<p>The rectangle images are relatively harder for the network to classify, since they have the same outline. But the interiors are distinct enough to classify.</p>
+<p>The circular sign is the hardest to recognize since there are similar classes in the dataset. 7 of the 8 initial entries in the name definitions are  speed limit signs. The difference between the most speed limit signs is only one character at the left.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Predict-the-Sign-Type-for-Each-Image">Predict the Sign Type for Each Image<a class="anchor-link" href="#Predict-the-Sign-Type-for-Each-Image">&#182;</a></h3>
 </div>
 </div>
@@ -18511,6 +18523,18 @@ Top five class predictions in order are :
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Observations about the outputs</strong> 
+I predicted the speed limit sign, which was the first in our test set, was hardest to detect. However it was classified correctly, and as seen in the softmas probabilities, with relative certainity.</p>
+<p>My another prediction was that the fourth sign (the rotated square shape) was easiest to detect. As the softmax probabilities suggest, the network was almost certain about this element.</p>
+<p>The network classified the third and the fifth image relatively certainly too. But to my surprise, it misclassified the second image. It only detected the correct answer in the second prediction with a very small certainity relative to first prediction.</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
